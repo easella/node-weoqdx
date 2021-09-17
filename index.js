@@ -1,0 +1,5 @@
+var express=require("express")
+var proxy=require("express-http-proxy")
+var app=express()
+app.use(proxy())
+.listen(8080)
